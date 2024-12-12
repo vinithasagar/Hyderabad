@@ -1,0 +1,695 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container1{
+    background-image: url("./pics/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#about{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./pics/about_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+}
+#about_head{
+    margin-top: 8.5rem;
+    font-size: 5rem;
+    letter-spacing: 15px;
+    color: whitesmoke;
+}
+#my_logo{
+    width: 80px;
+    vertical-align: middle;
+    border-radius:50px ;
+}
+#header{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    text-decoration: none;
+    color: black;
+    margin-right: 3rem;
+}
+#menu:hover{
+    color: blue;
+}
+#menu_options{
+    vertical-align: middle;
+    font-size: 25px;
+}
+#main_head{
+    margin-bottom: 0;
+    margin-top: 5rem;
+    font-size: 10rem;
+    color: white;
+    letter-spacing: 15px;
+}
+#main_text{
+    color:  black;
+    font-size: 20px;
+}
+#explore_button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(43, 43, 147);
+    border: 3px solid rgb(126, 151, 16);
+    transition: 1s;
+}
+#ex_but_text{
+    color: white; 
+    font-size: 22px; 
+    text-decoration: none;
+}
+#explore_button:hover{
+    background-color:orangered;
+}
+
+#container2{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    background-image: url(./pics/container2_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#explore_page_head{
+    margin-top: 6rem;
+    font-size: 3.5rem;
+}
+#explore_page_subhead{
+    font-size: 20px;
+    color: rgb(96, 94, 94);
+}
+#cards{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+#card1{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+    margin-right: 5rem;
+}
+#card1:hover{
+    box-shadow: 0px 0px 20px 0px ;
+}
+#img1{
+    border-radius: 10px;
+    transition: 1s;
+}
+#img1:hover{
+    opacity: 0.3;
+}
+#click_explore{
+    position: relative;
+    top: -11rem;
+    font-weight: 600;
+    display: none;
+    font-size: 25px;
+    transition: 1s;
+}
+#img1:hover ~ #click_explore{
+    display: block;
+}
+#container11{
+    background-image: url(./pics/about_container11);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about_text{
+    width: 70rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    color: black;
+}
+#google_map{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+#images_anim{
+    width: 30rem;
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    border:3px solid black;
+    transition: 1s;
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: fade-in-out 12s infinite;
+}
+.image img{
+    width: 30rem;
+    height: 20rem;
+    background-color: transparent;
+}
+@keyframes fade-in-out{
+    0%, 20% {opacity: 0;}
+    25%, 45% {opacity: 1;}
+    50%, 70% {opacity: 0;}
+}
+.imag1{animation-delay: 0s;}
+.imag2{animation-delay: 2s;}
+.imag3{animation-delay: 4s;}
+.imag4{animation-delay: 6s;}
+.imag5{animation-delay: 8s;}
+.imag6{animation-delay: 10s;}
+
+.map{
+    width: 54rem;
+    height: 20rem;
+    transition: 1s;
+}
+
+
+#back_home{
+    margin: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+#back_home:hover{
+    color: blue;
+}
+
+#cont{
+    display: flex;
+    margin: 30px;
+    height: 250px;
+    
+}
+#cont h2{
+    margin: 1rem;
+}
+#co{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#cont>img{
+    border-radius: 20px;
+}
+#co>p{
+    margin-left: 2rem;
+    width: 55rem;
+    text-align: justify;
+}
+#cont>img:hover{
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+#cont:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+#review{
+    margin-left: 26rem;
+    width: 80px;
+    justify-content: center;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+#about2 h3{
+    color: #ffff;
+    font: normal 36px 'cookie',cursive;
+    margin: 0;
+    text-align: center;
+}
+#about2 h3 span{
+    color: blue;
+}
+#about2 p{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+#footer_form{
+    width: 20rem;
+    padding-bottom: 10px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+    
+}
+#requried{
+    padding-left: 1rem;
+    width: 20rem;
+    background: transparent;
+    border: none;
+    color: #CCC;
+    border: 0;
+    outline: none;
+}
+#footer_form .fa-solid{
+    font-size: 18px;
+    margin: left 0px;
+    align-items: center;
+}
+#email_icon{
+    color: white;
+}
+
+
+#footer_form button{
+    color: white;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+#footer_form button .fa-solid fa-arrow-right{
+    font-size: 18px;
+    color: #ccc;
+    align-items: center;
+}
+
+footer{
+    background-color: #2d2a30;
+}
+.footerContainer{
+    width: 100%;
+    padding: 320px 100px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 20px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    margin-left: -5rem;
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.7;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 410px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+        margin-left: 2rem;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    #about2 h3{
+        margin-left: -2rem;
+        font-size: 30px;
+    }
+    form .fa-solid{
+        margin-left: 0rem;
+    }
+    #footer_form{
+        margin-left: -3.5rem;
+    }
+}
+
+#back_image2{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/800px-Golconda_Fort_005.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70vh;
+}
+#header{
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact_head{
+    color: white;
+    font-size: 100px;
+    padding-top: 4rem;
+    letter-spacing: 1rem;
+}
+#contact_part2{
+    display: flex;
+    padding: 2rem;
+}
+#contact_main_head{
+    margin-left: 5rem;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+#contact_para{
+    margin-left: 5rem; 
+    width: 35rem; 
+    color: rgb(124, 124, 124); 
+    font-size: 20px;
+}
+li{
+    vertical-align: middle;
+    list-style: none;
+    margin-left: 5rem;
+    color: rgb(124, 124, 124);
+    font-size: 20px;
+}
+#contact_form{
+    padding-top: 5.5rem;
+    padding-left: 3rem;
+}
+#name,#email{
+    height: 3rem;
+    width: 18.8rem;
+    padding-left: 1rem;
+    font-size: 17px;
+    margin: 1rem;
+}
+#subject{
+    height: 3rem;
+    width: 39.9rem;
+    padding-left: 1rem;
+    font-size: 17px;
+    margin: 1rem;
+}
+#message{
+    width: 39.9rem;
+    height: 7rem;
+    margin: 1rem;
+    padding-left: 1rem;
+    font-size: 17px;
+}
+#name:focus,#email:focus,#subject:focus,#message:focus{
+    outline: none;
+}
+#sent_button{
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem;
+    background-color: burlywood;
+    border: none;
+    color: white;
+}
+#sent_button:hover{
+    background-color: black;
+}
+
+
+
+@media screen and ( max-width : 410px) {
+    #my_logo{
+        width: 50px;
+    }
+    #header{
+        padding: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+    }
+    #menu_options{
+        font-size: 15px;
+    }
+    #menu{
+        margin-right: 0.5rem;
+    }
+    #main_head{
+        margin-top: 10rem;
+        margin-bottom: 0.5rem;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        color: whitesmoke;
+    }
+    #main_text{
+        margin-top: 4rem;
+        font-size: 15px;
+        width: 15rem;
+        color: whitesmoke;
+    }
+    #explore_button{
+        height: 1.5rem;
+        width: 7rem;
+    }
+    #ex_but_text{
+        font-size: 10px;
+    }
+    #container2{
+        height: 143vh;
+    }
+    #explore_page_head{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        width: 23rem;
+    }
+    #explore_page_subhead{
+        font-size: 15px;
+        width: 22rem;
+    }
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #card1{
+        width: 250px;
+        height: 200px;
+        margin-left: 5rem;
+        margin-bottom: 4rem;
+    }
+    #img1{
+        width: 250px;
+        height: 200px;
+    }
+    #click_explore{
+        top: -9rem;
+    }
+    #about{
+        height: 75vh;
+    }
+    #about_head{
+        margin-top: 11rem;
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: white;
+    }
+    #container11{
+        background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about_text{
+        width: 20rem;
+        font-size:17px;
+        text-align:center;
+    }
+    #google_map{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #images_anim{
+        width: 20rem;
+        position: relative;
+        height: 11rem;
+    }
+    .image img{
+        width: 20rem;
+        height: 11rem;
+        background-color: transparent;
+    }
+    .map{
+        margin-top: 2rem;
+        width: 18.9rem;
+        height: 13rem;
+    }
+
+    #container21 h1{
+        font-size: 20px;
+    }
+    #container31 h1{
+        font-size: 20px;
+    }
+    #container41 h1{
+        font-size: 20px;
+    }
+    #cont{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 33rem;
+        width: 300px;
+        border: 3px solid black;
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
+
+    }
+    #back_home{
+        font-size: 12px;
+    }
+    #cont img{
+        width: 295px;
+        height: 200px;
+    }
+    #cont p{
+        width: 250px;
+        font-size: 10px;
+        text-align:justify;
+        margin-left: 0;
+    }
+    #co a img{
+        width: 30px;
+        height: auto;
+    }
+    #co h2{
+        text-align: center;
+        margin-top: -5rem;
+        font-size: 20px;
+    }
+    #co{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #review{
+        display: none;
+    }
+    #contact_part2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #contact_head{
+        padding-top: 13rem;
+        font-size: 2rem;
+        letter-spacing:0.5rem;
+    }
+    #contact_main_head{
+        margin-left: 0rem;
+        font-size: 1.5rem;
+    }
+    #contact_para{
+        margin-left: 0rem; 
+        width: 19rem; 
+        font-size: 15px;
+    }
+    li{
+        margin-left: 0rem;
+        font-size: 15px;
+    }
+    #contact_form{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5.5rem;
+        padding-left: 0rem;
+    }
+    #name,#email{
+        height: 2rem;
+        width: 18rem;
+        padding-left: 1rem;
+        font-size: 17px;
+        margin: 0.5rem;
+    }
+    #subject{
+        height: 2rem;
+        width: 18rem;
+        padding-left: 1rem;
+        font-size: 17px;
+        margin: 0.5rem;
+    }
+    #message{
+        height: 8rem;
+        width: 18rem;
+        padding-left: 1rem;
+        font-size: 17px;
+        margin: 0.5rem;
+    }
+    #sent_button{
+        width: 10rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    
+}
